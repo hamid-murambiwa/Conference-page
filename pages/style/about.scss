@@ -1,0 +1,197 @@
+@mixin flex($direction: column, $j-c: center, $a-l: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $j-c;
+    align-items: $a-l;
+}
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#intro {
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 90px;
+}
+
+.img-con {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-position-x: 2%;
+    height: 20vh;
+}
+
+#menu-icon {
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+}
+
+.welcome-message {
+    font-size: 25px;
+    color: #ec5242;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 15px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./images/h1-b.svg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: cover;
+    background-position-y: center;
+    padding: 15px;
+}
+
+.label h1 {
+    font-size: 40px;
+    line-height: 36px;
+}
+
+.description {
+    width: auto;
+    padding: 15px 15px 15px;
+    margin-top: 40px;
+    background-color: white;
+}
+
+.details u {
+    padding-left: 13px; 
+}
+
+.d-d {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 70%;
+    line-height: 20px;
+    padding-left: 15px;
+}
+
+.details {
+    padding-left: 15px;
+    padding-right: 15px;  
+}
+
+#logo {
+    @include flex();
+    text-align: center;
+    padding: 25px 15px;
+}
+
+#logo h2 {
+    // font-size: 19px;
+    width: 70%;
+}
+
+#logo hr {
+    border-radius: 5px;
+    background-color: #ec5242;
+    width: 45px;
+    height: 2px;
+    margin: 10px;  
+}
+
+#logo p {
+    width: 90%;
+}
+
+#logo img {
+    padding: 20px;
+    border: 1px solid lightgrey;
+    margin-top: 20px;
+}
+
+#gatherings {
+    @include flex();
+    padding: 25px;
+}
+
+#gatherings hr {
+    border-radius: 5px;
+    background-color: #ec5242;
+    width: 45px;
+    height: 2px;
+    margin: 10px;  
+}
+
+#event-1 {
+    @include flex();
+    text-align: center;
+    background-blend-mode: multiply;
+    background-color: #ec5242;
+    background-image: url('./images/event-1.jpeg');
+    background-size: cover;
+    height: 30vh;
+    color: white;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#event-2 {
+    @include flex();
+    text-align: center;
+    background-blend-mode: multiply;
+    background-color: #ec5242;
+    background-image: url('./images/event-2.jpeg');
+    background-size: cover;
+    height: 30vh;
+    color: white;
+    padding: 30px;
+}
+
+footer {
+    @include flex();
+    background-color: #414246;
+    padding: 20px;
+}
+
+footer h3 {
+    color: whitesmoke;
+}
+
+footer hr {
+    border-radius: 5px;
+    background-color: #ec5242;
+    width: 45px;
+    height: 2px;
+    margin: 10px;  
+}
+
+#partner-con {
+    @include flex($direction: row, $j-c: space-around, $a-l: space-around);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.p-img {
+    margin-right: 2px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+#l-section {
+    @include flex($direction: row, $j-c: space-around);
+    height: 5vh;
+    margin-top: 30px;
+}
+
+#l-section {
+    font-size: 10px;
+}
+
+#l-section img {
+
+    height: 150px;
+    width: 150px;
+}
+
