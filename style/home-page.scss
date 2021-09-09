@@ -382,8 +382,9 @@ padding: 40px;
         width: 200px;
     }
 
-    #bottom-section nav {
+    #bottom-section ul {
         @include flex($direction: row, $j-c: space-around);
+        background-color: transparent;
         width: 50%;
         font-size: 16px;
     }

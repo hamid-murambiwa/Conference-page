@@ -3,7 +3,7 @@ const modalContainer = document.querySelector('#menu-container');
 const speakers = document.querySelector('#featured-speakers');
 
 const modal = `<div id="menu">
-<button id="x-con">
+<button type="submit" id="x-con">
 <img src="./images/Disabled.svg" alt="picture of the x icon">
 </button>
 <nav>
@@ -232,7 +232,7 @@ ${speakersData[3].sStory}
         </div>
             </article>
     
-                <button class="b-s" id="more-btn">
+                <button type="submit" class="b-s" id="more-btn">
                     <p id="btn-name">More</p> <img src="./images/down-arrow.svg" alt="image of down arrow" id="arrow-img">
                 </button>`;
 
