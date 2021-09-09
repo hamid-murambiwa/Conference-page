@@ -1,5 +1,16 @@
-@mixin flex($direction: column, $j-c: center, $a-l: center) {
-    display: flex;
+
+@font-face {
+    font-family: 'COCOGOOSE';
+    src:url('COCOGOOSE.ttf.woff') format('woff'),
+        url('COCOGOOSE.ttf.svg#COCOGOOSE') format('svg'),
+        url('COCOGOOSE.ttf.eot'),
+        url('COCOGOOSE.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin flex($display: flex, $direction: column, $j-c: center, $a-l: center) {
+    display: $display;
     flex-direction: $direction;
     justify-content: $j-c;
     align-items: $a-l;
@@ -11,11 +22,77 @@
 	border: 0;
 }
 
+body {
+    font-family: 'COCOGOOSE';
+}
+
 header {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+#menu {
+    @include flex($display: none, $j-c: flex-start);
+    height: 98vh;
+    width: 100%;
+    background-color: #414246;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#x-con {
+    @include flex($direction: row, $j-c: flex-end);
+    width: 100%;
+    background-color: transparent;
+}
+
+#x-con img {
+padding: 40px;
+}
+
+#menu nav {
+    @include flex($j-c: space-around);
+    height: 50%;
+}
+
+#menu nav li {
+    list-style-type: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.homelink {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 5px solid white; 
+    padding: 10px;
+}
+
+#footer-section {
+    display: none;
+}
+
+.intro-con {
+    background:  url("./images/woodcut.svg") left 36px bottom 310px no-repeat,
+    url("./images/barrel-icon.svg") right 30px top 240px no-repeat,
+    url("./images/tap.svg") left 60px bottom no-repeat,
+    url("./images/f-leaf.svg") right 36px top 530px no-repeat,;
+    background-size: 50px 50px;
+    padding-bottom: 70px;
+}
+
 #intro {
+    background: url("./images/b-icon.svg") right 10px top 100px no-repeat,
+    url("./images/f-leaf.svg") right 170px top 0px no-repeat;
+    background-size: 50px 50px;
     background-color: rgb(240, 240, 240);
     padding-bottom: 90px;
 }
@@ -29,7 +106,11 @@ header {
     height: 20vh;
 }
 
-#menu-icon {
+.img-con button {
+    background-color: transparent;
+}
+
+.menu-icon {
     width: 25px;
     height: 25px;
     padding: 20px;
@@ -47,13 +128,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('./images/h1-b.svg');
+    background-image: url('./images/h1-b1.svg');
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    background-size: cover;
-    background-position-y: center;
+    background-size: 100% 310%;
+    background-position-y: bottom;
     padding: 15px;
 }
 
@@ -63,6 +144,7 @@ header {
 }
 
 .description {
+    background-color: rgb(234, 234, 234);
     width: auto;
     border: 4px solid white;
     padding: 15px 15px 15px;
@@ -138,8 +220,10 @@ header {
 
 .grid-img {
     position: absolute;
-    width: 75px;
-    height: 75px;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
 }
 
 .fh {
@@ -159,8 +243,8 @@ header {
 
 .speaker-img {
     position: absolute;
-    top: 17px;
-    left: 21px;
+    top: 10px;
+    left: 10px;
     width: 80px;
     height: 80px;
 }
@@ -224,7 +308,17 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-    #menu-icon {
+    #menu {
+        display: none;
+    }
+
+    #speakers-section {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 20px;
+    }
+
+    .menu-icon {
         display: none;
     }
     header {
@@ -265,8 +359,11 @@ header {
     #bottom-section nav {
         @include flex($direction: row, $j-c: space-around);
         width: 50%;
-        color: rgb(82, 82, 82);
         font-size: 16px;
+    }
+
+    .nav-item {
+        color: rgb(82, 82, 82);
     }
 
     .homelink {
@@ -281,7 +378,14 @@ header {
     }
 
     .intro-con {
-
+        background:  url("./images/woodcut.svg") right 206px top 200px no-repeat,
+        url("./images/barrel-icon.svg") left 747px bottom 180px no-repeat,
+        url("./images/tap.svg") left 60px bottom no-repeat,
+        url("./images/b-icon.svg") right -10px no-repeat,
+        url("./images/f-leaf.svg") left 60px bottom 350px no-repeat,
+        url("./images/f-leaf.svg") right 56px top 430px no-repeat,;
+        background-size: 100px 100px;
+        margin-top: -50px;
         padding-left: 195px;
     }
 
@@ -295,8 +399,11 @@ header {
     }
 
     .description {
+        background-color: rgb(234, 234, 234);
         font-size: 15px;
         width: 50%;
+        padding: 20px 50px;
+        line-height: 25px;
     }
 
     .details h2 {
@@ -330,9 +437,8 @@ header {
         border-right: transparent;
     }
 
-
-
 .beer-selection-con h3 {
+    letter-spacing: 1px;
     font-size: 16px;
     width: 100%;
     margin-left: 5px;
@@ -343,21 +449,114 @@ header {
     font-size: 13px;
     width: 100%;
     margin-left: 5px;
+    line-height: 20px;
 }
 
-.speaker {
-    height: auto;
-    border: 2px solid red;
+.Gcon {
+    top: -10px;
+    left: 70px;
 }
 
 .speaker-con {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
+    grid-template-rows: auto auto;
+    row-gap: 15px;
     margin-bottom: 15px;
     margin-top: 15px;
     height: auto;
     width: 100%;
 }
 
+.grid-img {
+    position: absolute;
+    left: 0;
+}
+
+.speaker-con h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.speaker-con i {
+    font-size: 14px;
+    color: #ec5242;
+    margin-bottom: 5px;
+}
+
+.speaker-con hr {
+    width: 20px;
+    height: 2px;
+    background-color: grey;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.speaker-con p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.b-s {
+    display: none;
+}
+
+#footer-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+#footer-section footer {
+    @include flex();
+    background-color: #414246;
+    padding: 20px 150px;
+}
+
+#footer-section footer h3 {
+    color: whitesmoke;
+}
+
+#footer-section footer hr {
+    border-radius: 5px;
+    background-color: #ec5242;
+    width: 45px;
+    height: 2px;
+    margin: 10px;  
+}
+
+#partner-con {
+    @include flex($direction: row, $j-c: space-around, $a-l: space-around);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.p-img {
+    margin-right: 2px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+#l-section {
+    @include flex($direction: row, $j-c: center);
+    gap: 60px;
+    height: 5vh;
+    margin-top: 30px;
+}
+
+#l-section {
+    font-size: 10px;
+}
+
+#l-section img {
+    height: 200px;
+    width: 200px;
+}
+
+.l-d {
+    font-size: 14px;
+}
+
+#about {
+    color: #ec5242;
+}
   }
