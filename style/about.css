@@ -445,7 +445,7 @@ footer hr {
     height: 200px;
     width: 200px;
   }
-  #bottom-section nav {
+  #bottom-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -458,6 +458,7 @@ footer hr {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: transparent;
     width: 50%;
     color: #525252;
     font-size: 16px;
