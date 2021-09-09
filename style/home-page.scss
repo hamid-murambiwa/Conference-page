@@ -34,6 +34,17 @@ a {
     text-decoration: none;
 }
 
+
+#more-speakers {
+    display: none;
+    grid-template-columns: auto;
+    width: auto;
+}
+
+#speakers-section {
+    width: 100%;
+}
+
 #menu {
     @include flex($display: none, $j-c: flex-start);
     height: 98vh;
@@ -133,8 +144,9 @@ padding: 40px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    background-size: 100% 310%;
+    background-size: cover;
     background-position-y: bottom;
+    background-position-x: center;
     padding: 15px;
 }
 
@@ -164,7 +176,7 @@ padding: 40px;
     @include flex();
     background-image: url('./images/q.png');
     text-align: center;
-    padding: 25px 15px;
+    padding: 25px 20px;
 }
 
 #catering img {
@@ -192,10 +204,13 @@ padding: 40px;
 .beer-selection-con {
     @include flex($direction: row); 
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     gap: 3px;
     text-align: left;
     width: 100%;
+    background-color: rgba(211, 211, 211, 0.105);
+    padding: 15px 0px;
+    border-radius: 2px;
 }
 
 .beer-selection-con h3 {
@@ -231,13 +246,13 @@ padding: 40px;
     background-color: #ec5242;
     width: 50px;
     height: 3px;
-    margin: 10px;
+    margin: 15px;
 }
 
 .Gcon {
     position: relative;
     top: 0;
-    left: 0;
+    left: -100px;
     // right: 0;
 }
 
@@ -250,16 +265,13 @@ padding: 40px;
 }
 
 .speaker-con {
-    @include flex($direction: row, $j-c: space-between, $a-l: flex-start);
-    margin-bottom: 15px;
+    @include flex($direction: row, $j-c: center, $a-l: flex-start);
+    margin-bottom: 45px;
     margin-top: 15px;
+    margin-left: 50px;
     height: auto;
-    width: 100%;
+    width: auto;
 }
-
-// .speaker { 
-//     position: relative;
-// }
 
 .speaker-con h3 {
     font-size: 16px;
@@ -298,7 +310,6 @@ padding: 40px;
     border-radius: 5px;
     width: 100%;
     padding: 15px;
-    margin-top: 40px;
 }
 
 .b-s img {
@@ -309,18 +320,33 @@ padding: 40px;
 
 @media only screen and (min-width: 768px) {
     #menu {
-        display: none;
+      display: none;
+    }
+
+    #more-speakers {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 35px;
+      width: 100%;
     }
 
     #speakers-section {
       display: grid;
-      grid-template-columns: auto auto;
-      gap: 20px;
+      grid-template-columns: 47% 47%;
+      column-gap: 35px;
+      margin-top: 30px;
+      margin-left: -10px;
+      width: 100%;
+    }
+
+    #featured-speakers {
+        padding: 0px 100px;
     }
 
     .menu-icon {
         display: none;
     }
+
     header {
       display: flex;
       flex-direction: column;
@@ -389,6 +415,12 @@ padding: 40px;
         padding-left: 195px;
     }
 
+    .label {
+        background-size: cover;
+        background-position-y: inherit;
+        background-position-x: inherit;
+    }
+
     .label h1 {
         font-size: 65px;
         line-height: 60px;
@@ -418,6 +450,7 @@ padding: 40px;
 
     #catering {
         height: 60vh;
+        padding: 25px 50px;
     }
 
     #catering h2 {
@@ -435,6 +468,8 @@ padding: 40px;
         text-align: center;
         padding: 10px;
         border-right: transparent;
+        background-color: rgba(211, 211, 211, 0.105);
+        margin-right: 10px;
     }
 
 .beer-selection-con h3 {
@@ -454,16 +489,12 @@ padding: 40px;
 
 .Gcon {
     top: -10px;
-    left: 70px;
+    left: -100px;
 }
 
 .speaker-con {
-    grid-template-rows: auto auto;
-    row-gap: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    height: auto;
-    width: 100%;
+  width: 100%;
+  margin-left: 50px;
 }
 
 .grid-img {
@@ -528,6 +559,7 @@ padding: 40px;
     @include flex($direction: row, $j-c: space-around, $a-l: space-around);
     flex-wrap: wrap;
     width: 100%;
+    padding: 5px 150px;
 }
 
 .p-img {
@@ -559,4 +591,8 @@ padding: 40px;
 #about {
     color: #ec5242;
 }
+
+// .S-description {
+//     width: 70%;
+// }
   }

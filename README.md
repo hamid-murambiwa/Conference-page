@@ -6,7 +6,6 @@
 
 [Live Demo Link](https://hamid-murambiwa.github.io/JavaScript-capstone-project---Conference-page/index.html)
 
-**2 sections of the portfolio mobile version skeleton**
 
 <h2>Built With</h2>
 *HTML 
