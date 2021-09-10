@@ -2,3 +2,5 @@ node_modules/
 test.md
 package.json
 package-lock.json
+./style/about.scss
+./style/home-page.scss

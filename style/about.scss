@@ -1,433 +1,446 @@
 @mixin flex($display: flex, $direction: column, $j-c: center, $a-l: center) {
-    display: $display;
-    flex-direction: $direction;
-    justify-content: $j-c;
-    align-items: $a-l;
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $j-c;
+  align-items: $a-l;
 }
 
 * {
-    margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 header {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
 }
 
 #menu {
-    @include flex($display: none, $j-c: flex-start);
-    position: fixed;
-    height: 98vh;
-    width: 100%;
-    background-color: #414246;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+  @include flex($display: none, $j-c: flex-start);
+
+  position: fixed;
+  height: 98vh;
+  width: 100%;
+  background-color: #414246;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 #x-con {
-    @include flex($direction: row, $j-c: flex-end);
-    width: 100%;
-    background-color: transparent;
+  @include flex($direction: row, $j-c: flex-end);
+
+  width: 100%;
+  background-color: transparent;
 }
 
 #x-con img {
-padding: 40px;
+  padding: 40px;
 }
 
 #menu nav {
-    @include flex($j-c: space-around);
-    height: 50%;
+  @include flex($j-c: space-around);
+
+  height: 50%;
 }
 
 #menu nav li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .nav-item {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
 
 .homelink {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    border: 5px solid white; 
-    padding: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border: 5px solid white;
+  padding: 16px;
 }
 
-
 #intro {
-    background:  url("./images/woodcut.svg") left 36px bottom 310px no-repeat,
+  background:
+    url("./images/woodcut.svg") left 36px bottom 310px no-repeat,
     url("./images/barrel-icon.svg") right 250px top 369px no-repeat,
-    url("./images/tap.svg") left 0px bottom 395px no-repeat,
+    url("./images/tap.svg") left 0 bottom 395px no-repeat,
     url("./images/f-leaf.svg") right 2px top 365px no-repeat,
     url("./images/b-icon.svg") right 280px top 120px no-repeat,
     url("./images/f-leaf.svg") right 70px top 140px no-repeat;
-    background-size: 50px 50px;
-    background-color: rgb(240, 240, 240);
-    padding-bottom: 90px;
+  background-size: 50px 50px;
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 90px;
 }
 
 .img-con {
-    display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 60%;
-    background-position-x: 2%;
-    height: 20vh;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+  background-position-x: 2%;
+  height: 20vh;
 }
 
 .img-con button {
-    height: 25px;
-    background-color: transparent;
+  height: 25px;
+  background-color: transparent;
 }
 
 .menu-icon {
-    width: 25px;
-    height: 25px;
-    padding: 20px;
+  width: 25px;
+  height: 25px;
+  padding: 20px;
 }
 
 .welcome-message {
-    font-size: 25px;
-    color: #ec5242;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: 15px;
+  font-size: 25px;
+  color: #ec5242;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url('./images/h1-b1.svg');
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    background-size: cover;
-    background-position-y: 60%;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./images/h1-b1.svg');
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-size: cover;
+  background-position-y: 60%;
+  padding: 15px;
 }
 
 .label h1 {
-    font-size: 40px;
-    line-height: 36px;
+  font-size: 40px;
+  line-height: 36px;
 }
 
 .a-description {
-    display: none;
+  display: none;
 }
 
 .description {
-    width: auto;
-    padding: 15px 15px 15px;
-    margin-top: 40px;
-    background-color: white;
+  width: auto;
+  padding: 15px 15px 15px;
+  margin-top: 40px;
+  background-color: white;
 }
 
 .details u {
-    padding-left: 13px; 
+  padding-left: 13px;
 }
 
 .d-d {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    width: 70%;
-    line-height: 20px;
-    padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 70%;
+  line-height: 20px;
+  padding-left: 15px;
 }
 
 .details {
-    padding-left: 15px;
-    padding-right: 15px;  
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #logo {
-    @include flex();
-    text-align: center;
-    padding: 25px 15px;
+  @include flex();
+
+  text-align: center;
+  padding: 25px 15px;
 }
 
 #logo h2 {
-    // font-size: 19px;
-    width: 70%;
-}
-
-#logo hr {
-    border-radius: 5px;
-    background-color: #ec5242;
-    width: 45px;
-    height: 2px;
-    margin: 15px;  
-}
-
-#logo p {
-    width: 90%;
-}
-
-.about-d {
-    display: none;
- }
-
-#logo img {
-    padding: 20px;
-    border: 1px solid lightgrey;
-    margin-top: 20px;
-}
-
-#gatherings {
-    @include flex();
-    padding: 25px;
-}
-
-#gatherings hr {
-    border-radius: 5px;
-    background-color: #ec5242;
-    width: 45px;
-    height: 2px;
-    margin: 15px;  
-}
-
-#event-1 {
-    @include flex();
-    text-align: center;
-    background-blend-mode: multiply;
-    background-color: #ec5242;
-    background-image: url('./images/event-1.jpeg');
-    background-size: cover;
-    height: 30vh;
-    color: white;
-    padding: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#event-2 {
-    @include flex();
-    text-align: center;
-    background-blend-mode: multiply;
-    background-color: #ec5242;
-    background-image: url('./images/event-2.jpeg');
-    background-size: cover;
-    height: 30vh;
-    color: white;
-    padding: 30px;
-}
-
-footer {
-    @include flex();
-    background-color: #414246;
-    padding: 20px;
-}
-
-footer h3 {
-    color: whitesmoke;
+  // font-size: 19px;
+  width: 70%;
 }
 
 footer hr {
+  border-radius: 5px;
+  background-color: #ec5242;
+  width: 45px;
+  height: 2px;
+  margin: 10px;
+}
+
+#logo hr {
+  border-radius: 5px;
+  background-color: #ec5242;
+  width: 45px;
+  height: 2px;
+  margin: 15px;
+}
+
+#logo p {
+  width: 90%;
+}
+
+.about-d {
+  display: none;
+}
+
+#logo img {
+  padding: 20px;
+  border: 1px solid lightgrey;
+  margin-top: 20px;
+}
+
+#gatherings {
+  @include flex();
+
+  padding: 25px;
+}
+
+#gatherings hr {
+  border-radius: 5px;
+  background-color: #ec5242;
+  width: 45px;
+  height: 2px;
+  margin: 15px;
+}
+
+#event-1 {
+  @include flex();
+
+  text-align: center;
+  background-blend-mode: multiply;
+  background-color: #ec5242;
+  background-image: url('./images/event-1.jpeg');
+  background-size: cover;
+  height: 30vh;
+  color: white;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#event-2 {
+  @include flex();
+
+  text-align: center;
+  background-blend-mode: multiply;
+  background-color: #ec5242;
+  background-image: url('./images/event-2.jpeg');
+  background-size: cover;
+  height: 30vh;
+  color: white;
+  padding: 30px;
+}
+
+footer {
+  @include flex();
+
+  background-color: #414246;
+  padding: 20px;
+}
+
+footer h3 {
+  color: whitesmoke;
+}
+
+#partner-con {
+  @include flex($direction: row, $j-c: space-around, $a-l: space-around);
+
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.p-img {
+  margin-right: 2px;
+  margin-bottom: 10px;
+  width: 100px;
+}
+
+#l-section {
+  @include flex($direction: row, $j-c: space-around);
+
+  font-size: 10px;
+  height: 5vh;
+  margin-top: 30px;
+}
+
+#l-section img {
+  height: 150px;
+  width: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .img-con {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header ul {
+    @include flex($direction: row, $j-c: flex-end);
+
+    background-color: #414246;
+    gap: 20px;
+    padding-right: 11%;
+    font-size: 12px;
+    color: white;
+    height: 4vh;
+  }
+
+  header ul li img {
+    height: 15px;
+    width: 15px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  #bottom-section {
+    @include flex($direction: row, $j-c: space-around);
+
+    height: 13vh;
+  }
+
+  #bottom-section img {
+    height: 200px;
+    width: 200px;
+  }
+
+  #bottom-section ul {
+    @include flex($direction: row, $j-c: space-around);
+
+    background-color: transparent;
+    width: 50%;
+    color: rgb(82, 82, 82);
+    font-size: 16px;
+  }
+
+  .homelink {
+    text-decoration: none;
+    color: #ec5242;
+    border: 4px solid #ec5242;
+    padding: 10px;
+  }
+
+  .about {
+    color: #ec5242;
+  }
+
+  #intro {
+    background: url("./images/woodcut.svg") left 166px bottom 460px no-repeat;
+    background: url("./images/barrel-icon.svg") left 154px bottom 320px no-repeat;
+    background: url("./images/tap.svg") left 75px bottom 380px no-repeat;
+    background: url("./images/f-leaf.svg") right 56px top 250px no-repeat;
+    background: url("./images/b-icon.svg") right 175px top 115px no-repeat;
+    background-size: 50px 50px;
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+  }
+
+  .welcome-message {
+    display: none;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .a-description {
+    display: flex;
+    line-height: 25px;
+    width: 70%;
+    padding: 15px 15px 15px;
+    margin-top: 40px;
+    background-color: white;
+  }
+
+  .details {
+    @include flex();
+
+    width: 100%;
+  }
+
+  .d-d {
+    width: auto;
+  }
+
+  #logo h3 {
+    font-size: 30px;
+  }
+
+  #logo hr {
     border-radius: 5px;
     background-color: #ec5242;
     width: 45px;
     height: 2px;
-    margin: 10px;  
+    margin: 50px;
+  }
+
+  #logo img {
+    width: 600px;
+    height: 600px;
+  }
+
+  .about-d {
+    display: flex;
+  }
+
+  .home-d p {
+    display: none;
+  }
+
+  #gatherings h3 {
+    font-size: 30px;
+  }
+
+  #gatherings p {
+    font-size: 20px;
+  }
+
+  #gatherings hr {
+    margin: 30px;
+  }
+
+  .event-con {
+    @include flex($direction: row);
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #event-1 {
+    margin-right: 55px;
+    width: 300px;
+    height: 250px;
+  }
+
+  #event-2 {
+    width: 300px;
+    height: 250px;
+  }
+
+  .label {
+    padding-top: 50px;
+  }
 }
-
-#partner-con {
-    @include flex($direction: row, $j-c: space-around, $a-l: space-around);
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.p-img {
-    margin-right: 2px;
-    margin-bottom: 10px;
-    width: 100px;
-}
-
-#l-section {
-    @include flex($direction: row, $j-c: space-around);
-    height: 5vh;
-    margin-top: 30px;
-}
-
-#l-section {
-    font-size: 10px;
-}
-
-#l-section img {
-
-    height: 150px;
-    width: 150px;
-}
-
-@media only screen and (min-width: 768px) {
-    #menu {
-        display: none;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-
-    .img-con {
-        display: none;
-    }
-    header {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-      
-      header ul {
-          @include flex($direction: row, $j-c: flex-end);
-        background-color: #414246;
-        gap: 20px;
-        padding-right: 11%;
-        font-size: 12px;
-        color: white;
-        height: 4vh;
-      }
-  
-      header ul li img {
-        height: 15px;
-        width: 15px;
-      }
-  
-      li {
-         list-style-type: none;
-      }
-  
-      #bottom-section {
-          @include flex($direction: row, $j-c: space-around);
-          height: 13vh;
-      }
-  
-      #bottom-section img {
-          height: 200px;
-          width: 200px;
-      }
-  
-      #bottom-section ul {
-          @include flex($direction: row, $j-c: space-around);
-          background-color: transparent;
-          width: 50%;
-          color: rgb(82, 82, 82);
-          font-size: 16px;
-      }
-  
-      .homelink {
-          text-decoration: none;
-          color: #ec5242;
-          border: 4px solid #ec5242;
-          padding: 10px;
-      }
-
-      .about {
-        color: #ec5242;
-    }
-  
-    #intro {
-        background:  url("./images/woodcut.svg") left 166px bottom 460px no-repeat,
-        url("./images/barrel-icon.svg") left 154px bottom 320px no-repeat,
-        url("./images/tap.svg") left 75px bottom 380px  no-repeat,
-        url("./images/f-leaf.svg") right 56px top 250px no-repeat,
-        url("./images/b-icon.svg") right 175px top 115px no-repeat,;
-        background-size: 50px 50px;
-
-    background-color: rgb(240, 240, 240);
-        text-align: center;
-    }
-
-    .welcome-message {
-        display: none;
-    }
-
-    .description {
-        display: none;
-    }
-
-    .a-description {
-        display: flex;
-        line-height: 25px;
-        width: 70%;
-        padding: 15px 15px 15px;
-        margin-top: 40px;
-        background-color: white;
-    }
-
-    .details {
-        @include flex();
-        width: 100%;
-    }
-
-    .d-d {
-        width: auto;
-    }
-
-    #logo h3 {
-        font-size: 30px;
-    }
-
-    #logo hr {
-        border-radius: 5px;
-        background-color: #ec5242;
-        width: 45px;
-        height: 2px;
-        margin: 50px;  
-    }
-
-    #logo img {
-        width: 600px;
-        height: 600px;
-    }
-
-    .about-d {
-       display: flex;
-    }
-
-    .home-d p {
-        display: none;
-    }
-
-    #gatherings h3 {
-        font-size: 30px;
-    }
-
-    #gatherings p {
-        font-size: 20px;
-    }
-
-    #gatherings hr {
-        margin: 30px;
-    }
-
-    .event-con {
-        @include flex($direction: row);
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    #event-1 {
-        margin-right: 55px;
-        width: 300px;
-        height: 250px;
-    }
-
-    #event-2 {
-        width: 300px;
-        height: 250px;
-    }
-    
-    .label {
-        padding-top: 50px;
-    }
-}
-
