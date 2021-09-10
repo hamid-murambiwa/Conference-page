@@ -186,7 +186,7 @@ a {
 }
 
 #intro h2 {
-  line-height: 70px;
+  line-height: 48px;
 }
 
 .details {
@@ -545,7 +545,7 @@ a {
   }
 
   .label h1 {
-    font-size: 65px;
+    font-size: 48px;
     line-height: 60px;
   }
 
@@ -615,18 +615,20 @@ a {
     border-right: transparent;
     background-color: rgba(211, 211, 211, 0.105);
     margin-right: 10px;
+    height: auto;
+    width: auto;
   }
 
   .beer-selection-con h3 {
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 9px;
     width: 100%;
     margin-left: 5px;
     margin-bottom: 10px;
   }
 
   .beer-selection-con p {
-    font-size: 13px;
+    font-size: 9px;
     width: 100%;
     margin-left: 5px;
     line-height: 20px;
