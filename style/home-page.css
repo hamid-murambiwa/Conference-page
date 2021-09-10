@@ -466,12 +466,13 @@ a {
   }
 
   header ul li img {
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
   }
 
   li {
     list-style-type: none;
+    font-size: 9px;
   }
 
   #bottom-section {
@@ -490,8 +491,8 @@ a {
   }
 
   #bottom-section img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 
   #bottom-section ul {
@@ -513,6 +514,7 @@ a {
 
   .nav-item {
     color: #525252;
+    font-size: 10px;
   }
 
   .homelink {
@@ -520,10 +522,11 @@ a {
     color: #ec5242;
     border: 4px solid #ec5242;
     padding: 10px;
+    font-size: 10px;
   }
 
   #intro {
-    height: 100vh;
+    height: auto;
   }
 
   .intro-con {
@@ -545,26 +548,28 @@ a {
   }
 
   .label h1 {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 45px;
   }
 
   .welcome-message {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   .description {
     background-color: #eaeaea;
-    font-size: 15px;
+    font-size: 10px;
     width: 50%;
-    padding: 20px 50px;
+    padding: 12px 50px;
     line-height: 25px;
+    margin-top: 10px;
   }
 
   .details h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 7px;
     margin-top: 10px;
+    line-height: 40px;
   }
 
   .catering-con {
@@ -583,8 +588,9 @@ a {
   }
 
   #catering {
-    height: 60vh;
+    height: auto;
     padding: 25px 50px;
+    margin-bottom: 25px;
   }
 
   #catering h2 {
@@ -621,8 +627,8 @@ a {
 
   .beer-selection-con h3 {
     letter-spacing: 1px;
-    font-size: 9px;
-    width: 100%;
+    font-size: 12px;
+    width: auto;
     margin-left: 5px;
     margin-bottom: 10px;
   }
@@ -768,5 +774,6 @@ a {
 
   #about {
     color: #ec5242;
+    font-size: 10px;
   }
 }
