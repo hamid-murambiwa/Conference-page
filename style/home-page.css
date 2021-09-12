@@ -14,6 +14,7 @@ header {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 #more-speakers {
@@ -517,12 +518,22 @@ a {
     font-size: 10px;
   }
 
+  .nav-item:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #ec5242;
+  }
+
   .homelink {
     text-decoration: none;
     color: #ec5242;
     border: 4px solid #ec5242;
     padding: 10px;
     font-size: 10px;
+    background-color: transparent;
+  }
+
+  .homelink:hover {
+    box-shadow: 3px 3px 3px #e33f2d62;
   }
 
   #intro {
@@ -623,6 +634,19 @@ a {
     margin-right: 10px;
     height: auto;
     width: auto;
+  }
+
+  .beer-selection-con:hover {
+    animation-name: en-large;
+    animation-duration: 100ms;
+    animation-fill-mode: both;
+  }
+
+  @keyframes en-large {
+    100% {
+      background-color: rgba(211, 211, 211, 0.256);
+      transform: scale(1.05);
+    }
   }
 
   .beer-selection-con h3 {
@@ -775,5 +799,10 @@ a {
   #about {
     color: #ec5242;
     font-size: 10px;
+  }
+
+  #about:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid #525252;
   }
 }
