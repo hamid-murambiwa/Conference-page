@@ -1,5 +1,6 @@
 const button = document.querySelector('#menu-icon');
 const modalContainer = document.querySelector('#menu-container');
+const speakers = document.getElementById('featured-speakers');
 
 const modal = `<div id="menu">
 <button type="submit" id="x-con">
@@ -91,118 +92,147 @@ const speakersData = [{
 ];
 
 // dynamically displaying the speakers section
-const heading = document.createElement('h2');
-const headingText = document.createTextNode('Featured speakers');
-heading.appendChild(headingText);
-document.getElementById('featured-speakers').appendChild(heading);
+const speakersContent = `<h2>
+        Featured speakers
+    </h2>
 
-const hr = document.createElement('h2');
-hr.className = 'fh';
-document.getElementById('featured-speakers').appendChild(hr);
+    <hr class="fh">
 
-const speakersContainer = document.createElement('article');
-speakersContainer.id = 'speakers-section';
+    <article id="speakers-section">
+        <div class="speaker-con">
+                <div class="Gcon">
+                <img src="${speakersData[0].gridImg}" alt="" class="grid-img">
+                <img src="${speakersData[0].speakersImg}" alt="a picture of Michel Doukeris" class="speaker-img">
 
-for (let a = 0; a < 2; a + 1) {
-  const speakerCON = document.createElement('div');
-  speakerCON.className = 'speaker-con';
-  speakersContainer.appendChild(speakerCON);
+            </div>
 
-  const imgCon = document.createElement('div');
-  imgCon.className = 'Gcon';
-  speakerCON.appendChild(imgCon);
+            <div class="S-description">
+            <h3>
+            ${speakersData[0].sName}
+            </h3>
+            <i>
+            ${speakersData[0].sPosition}
+            </i>
+            <hr>
+            <p>
+            ${speakersData[0].sStory}
+            </p>
+            </div>
+            </div>
 
-  const gridImage = document.createElement('img');
-  gridImage.className = 'grid-img';
-  gridImage.src = speakersData[a].gridImg;
-  imgCon.appendChild(gridImage);
+            <div class="speaker-con">
+            <div class="Gcon">
+            <img src="${speakersData[1].gridImg}" alt="" class="grid-img">
+            <img src="${speakersData[1].speakersImg}" alt="a picture of Michel Doukeris" class="speaker-img">
 
-  const speakerImage = document.createElement('img');
-  speakerImage.className = 'speaker-img';
-  speakerImage.src = speakersData[a].speakersImg;
-  imgCon.appendChild(speakerImage);
+        </div>
 
-  const description = document.createElement('div');
-  description.className = 'S-description';
-  speakerCON.appendChild(description);
+        <div class="S-description">
+        <h3>
+        ${speakersData[1].sName}
+        </h3>
+        <i>
+        ${speakersData[1].sPosition}
+        </i>
+        <hr>
+        <p>
+        ${speakersData[1].sStory}
+        </p>
+        </div>
+        </div>
 
-  const h3 = document.createElement('h3');
-  h3.innerText = speakersData[a].sName;
-  description.appendChild(h3);
+    </article>
 
-  const i = document.createElement('i');
-  i.innerText = speakersData[a].sPosition;
-  description.appendChild(i);
+    <article id="more-speakers">
 
-  const hr2 = document.createElement('hr');
-  description.appendChild(hr2);
+    <div class="speaker-con">
+    <div class="Gcon">
+    <img src="${speakersData[2].gridImg}" alt="" class="grid-img">
+    <img src="${speakersData[2].speakersImg}" alt="a picture of Michel Doukeris" class="speaker-img">
+</div>
 
-  const p = document.createElement('p');
-  p.innerText = speakersData[a].sStory;
-  description.appendChild(p);
+<div class="S-description">
+<h3>
+${speakersData[2].sName}
+</h3>
+<i>
+${speakersData[2].sPosition}
+</i>
+<hr>
+<p>
+${speakersData[2].sStory}
+</p>
+</div>
+</div>
 
-  document.getElementById('featured-speakers').appendChild(speakersContainer);
-}
+<div class="speaker-con">
+<div class="Gcon">
+<img src="${speakersData[3].gridImg}" alt="" class="grid-img">
+<img src="${speakersData[3].speakersImg}" alt="a picture of Michel Doukeris" class="speaker-img">
 
-const moreSpeakers = document.createElement('article');
-moreSpeakers.id = 'more-speakers';
-for (let a = 2; a < speakersData.length; a + 1) {
-  const speakerCON = document.createElement('div');
-  speakerCON.className = 'speaker-con';
-  moreSpeakers.appendChild(speakerCON);
+</div>
 
-  const imgCon = document.createElement('div');
-  imgCon.className = 'Gcon';
-  speakerCON.appendChild(imgCon);
+<div class="S-description">
+<h3>
+${speakersData[3].sName}
+</h3>
+<i>
+${speakersData[3].sPosition}
+</i>
+<hr>
+<p>
+${speakersData[3].sStory}
+</p>
+</div>
+</div>
 
-  const gridImage = document.createElement('img');
-  gridImage.className = 'grid-img';
-  gridImage.src = speakersData[a].gridImg;
-  imgCon.appendChild(gridImage);
+<div class="speaker-con">
+                <div class="Gcon">
+                <img src="${speakersData[4].gridImg}" alt="" class="grid-img">
+                <img src="${speakersData[4].speakersImg}" alt="a picture of Michel Doukeris" class="speaker-img">
 
-  const speakerImage = document.createElement('img');
-  speakerImage.className = 'speaker-img';
-  speakerImage.src = speakersData[a].speakersImg;
-  imgCon.appendChild(speakerImage);
+            </div>
 
-  const description = document.createElement('div');
-  description.className = 'S-description';
-  speakerCON.appendChild(description);
+            <div class="S-description">
+            <h3>
+            ${speakersData[4].sName}
+            </h3>
+            <i>
+            ${speakersData[4].sPosition}
+            </i>
+            <hr>
+            <p>
+            ${speakersData[4].sStory}
+            </p>
+            </div>
+            </div>
 
-  const h3 = document.createElement('h3');
-  h3.innerText = speakersData[a].sName;
-  description.appendChild(h3);
+            <div class="speaker-con">
+            <div class="Gcon">
+            <img src="${speakersData[5].gridImg}" alt="" class="grid-img">
+            <img src="${speakersData[5].speakersImg}" alt="a picture of Michel Doukeris" class="speaker-img">
+        </div>
 
-  const i = document.createElement('i');
-  i.innerText = speakersData[a].sPosition;
-  description.appendChild(i);
+        <div class="S-description">
+        <h3>
+        ${speakersData[5].sName}
+        </h3>
+        <i>
+        ${speakersData[5].sPosition}
+        </i>
+        <hr>
+        <p>
+        ${speakersData[5].sStory}
+        </p>
+        </div>
+        </div>
+            </article>
 
-  const hr2 = document.createElement('hr');
-  description.appendChild(hr2);
+                <button type="submit" class="b-s" id="more-btn">
+                    <p id="btn-name">More</p> <img src="./images/down-arrow.svg" alt="image of down arrow" id="arrow-img">
+                </button>`;
 
-  const p = document.createElement('p');
-  p.innerText = speakersData[a].sStory;
-  description.appendChild(p);
-
-  document.getElementById('featured-speakers').appendChild(moreSpeakers);
-}
-
-const Sbutton = document.createElement('button');
-Sbutton.type = 'submit';
-Sbutton.className = 'b-s';
-Sbutton.id = 'more-btn';
-
-const buttonLabel = document.createElement('p');
-buttonLabel.id = 'btn-name';
-buttonLabel.innerText = 'More';
-Sbutton.appendChild(buttonLabel);
-
-const buttonImg = document.createElement('img');
-buttonImg.id = 'arrow-img';
-buttonImg.src = './images/down-arrow.svg';
-Sbutton.appendChild(buttonImg);
-
-document.getElementById('featured-speakers').appendChild(Sbutton);
+speakers.innerHTML = speakersContent;
 
 const moreBtn = document.getElementById('more-btn');
 
