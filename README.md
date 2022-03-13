@@ -1,37 +1,41 @@
-<h1>Conference page</h1>
-   *Conference page with a home and mobile page*
+# Conference page
+- This is a conference page for a fictional beer company, that has a home and an about me page. The page announces the next beer conference hosted by the company. Javascript, CSS, and HTML were used for this project.
 
 ![an image of the portfolio mobile page  webpage](https://github.com/hamid-murambiwa/home-page-image/blob/master/home-page.png)
 ## Live Demo
 
 [Live Demo Link](https://epic-northcutt-a38936.netlify.app)
 
+## Built With
 
-<h2>Built With</h2>
-*HTML 
-*CSS3
-*Javascript
+- HTML
+- CSS3
+- Javascript
 
-<h2>Authors</h2>
+---
+## Authors
 
-<h3>👤 Hamid</h3>
+👤 **Hamid Murambiwa**
 
-*GitHub: [@hamid-murambiwa](https://github.com/hamid-murambiwa)
-*Twitter: [@Hamid](https://twitter.com/Hamid87789454)
-*LinkedIn: [@hamid murambiwa](https://www.linkedin.com/in/hamid-murambiwa-8a9a9520a/)
+- GitHub: [@hamid-murambiwa](https://github.com/hamid-murambiwa/)
+- Twitter: [@Hamid87789454](https://twitter.com/Hamid87789454/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/hamid-murambiwa/)
 
 
-<h2>🤝 Contributing</h2>
-**Contributions, issues, and feature requests are welcome!**
+## 🤝 Contributing
 
-**Feel free to check the issues page [issues page](https://github.com/hamid-murambiwa/Hello-Microverse/issues).**
+>Contributions, issues, and feature requests are welcome!
+>Feel free to check the [issues page](../../issues/).
 
-<h2>Show your support</h2>
-**Give a ⭐️ if you like this project!**
 
-<h2>Acknowledgments</h2>
- - Microverse
- - Microverse Learning Partners  
+## Show your support
 
-<h2>📝 License</h2>
-This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+>Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- This project built in Microverse's Fourth Module's Capstone.
+
+## 📝 License
+
+>This project is [MIT](./MIT.md) licensed.
