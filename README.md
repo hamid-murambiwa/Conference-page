@@ -4,7 +4,7 @@
 ![an image of the portfolio mobile page  webpage](https://github.com/hamid-murambiwa/home-page-image/blob/master/home-page.png)
 ## Live Demo
 
-[Live Demo Link](https://hamid-murambiwa.github.io/JavaScript-capstone-project---Conference-page/index.html)
+[Live Demo Link](https://epic-northcutt-a38936.netlify.app)
 
 
 <h2>Built With</h2>
