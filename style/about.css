@@ -93,7 +93,7 @@ body {
 }
 
 #intro {
-  background: url("./images/woodcut.svg") left 36px bottom 310px no-repeat, url("./images/barrel-icon.svg") right 250px top 320px no-repeat, url("./images/tap.svg") left 0 bottom 395px no-repeat, url("./images/f-leaf.svg") right 2px top 365px no-repeat, url("./images/b-icon.svg") right 280px top 90px no-repeat, url("./images/f-leaf.svg") right 50px top 140px no-repeat;
+  background: url("./images/woodcut.svg") left 36px bottom 310px no-repeat, url("./images/barrel-icon.svg") right 200px top 320px no-repeat, url("./images/tap.svg") left 0 bottom 395px no-repeat, url("./images/f-leaf.svg") right 2px top 365px no-repeat, url("./images/b-icon.svg") right 280px top 90px no-repeat, url("./images/f-leaf.svg") right 50px top 140px no-repeat;
   background-size: 50px 50px;
   background-color: #f0f0f0;
   padding-bottom: 90px;
