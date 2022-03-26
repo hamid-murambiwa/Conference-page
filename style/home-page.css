@@ -515,12 +515,14 @@ a {
   }
   .nav-item {
     color: #525252;
+    font-weight: 600;
   }
   .homelink {
     text-decoration: none;
     color: #ec5242;
     border: 4px solid #ec5242;
     padding: 10px;
+    font-weight: 600;
   }
   #intro {
     height: 100vh;
@@ -744,6 +746,7 @@ a {
   }
   #about {
     color: #ec5242;
+    font-weight: 600;
   }
 }
 /*# sourceMappingURL=home-page.css.map */
