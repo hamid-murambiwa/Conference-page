@@ -123,7 +123,7 @@ a {
 }
 
 #intro {
-  background: url("./images/b-icon.svg") right 10px top 100px no-repeat, url("./images/f-leaf.svg") right 170px top 0 no-repeat;
+  background: url("./images/b-icon.svg") right 10px top 90px no-repeat, url("./images/f-leaf.svg") right 170px top 0 no-repeat;
   background-size: 50px 50px;
   background-color: #f0f0f0;
   padding-bottom: 90px;
@@ -511,7 +511,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     background-color: transparent;
-    width: 50%;
+    width: 60%;
     font-size: 16px;
   }
   .nav-item {
@@ -579,7 +579,7 @@ a {
             align-items: center;
   }
   #catering {
-    height: 60vh;
+    height: auto;
     padding: 25px 50px;
   }
   #catering h2 {
