@@ -129,6 +129,16 @@ body {
   padding-left: 10px;
 }
 
+.nav-item {
+  color: #525252;
+  font-weight: 600;
+}
+
+#about {
+  color: #ec5242;
+  font-weight: 600;
+}
+
 .label {
   display: -webkit-box;
   display: -ms-flexbox;
