@@ -137,6 +137,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 15px;
+}
+
+.label h1 {
   background-image: url('./images/h1-b1.svg');
   background-clip: inherit;
   -webkit-background-clip: text;
@@ -144,11 +148,7 @@ a {
   color: transparent;
   background-size: cover;
   background-position-y: bottom;
-  background-position-x: center;
-  padding: 15px;
-}
-
-.label h1 {
+  background-position-x: right;
   font-size: 40px;
   line-height: 36px;
 }
