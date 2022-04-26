@@ -13,7 +13,7 @@
 - Javascript
 
 ---
-## Authors
+## Author
 
 👤 **Hamid Murambiwa**
 
