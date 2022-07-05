@@ -4,7 +4,7 @@
 ![an image of the portfolio mobile page  webpage](https://github.com/hamid-murambiwa/home-page-image/blob/master/home-page.png)
 ## Live Demo
 
-[Live Demo Link](https://splendorous-granita-62d939.netlify.app)
+[Live Demo Link](https://conference-page.netlify.app/)
 
 ## Built With
 
